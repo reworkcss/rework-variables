@@ -1,0 +1,8 @@
+{
+  "name": "rework-variables",
+  "description": "Variable support",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "visionmedia/rework": "*"
+  }
+}
