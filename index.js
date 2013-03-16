@@ -14,11 +14,11 @@ module.exports = function (variables) {
       variables[name] = String(variables[name]);
   })
 
-  var regex = /(^|\b)\$([\w-]+)(\b|$)/g
+  var regex = /(^|\s)\$([\w-]+)(\s|$)/g
 
   function replace(str) {
-    return str.replace(regex, function (_, NULL, name) {
-      return variables[name] || name
+    return str.replace(regex, function (_, start, name, end) {
+      return start + (variables[name] || name) + end
     })
   }
 

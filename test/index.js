@@ -25,3 +25,4 @@ function test(file, msg) {
 
 test('variables', 'Variables failed')
 test('media', 'Media failed')
+test('context', 'Context failed')
