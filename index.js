@@ -1,29 +1,10 @@
+var regex = /(^|\s)\$([\w-]+)(\s|$)/g
+
 module.exports = function (variables) {
-  if (!variables)
-    throw new Error('Argument required.');
-
-  if (Object(variables) !== variables)
-    throw new TypeError('Variables must be an object dictionary.');
-
-  // Validate variables
-  Object.keys(variables).forEach(function (name) {
-    if (!name.match(/^[\w-]+$/))
-      throw new Error('Each variable name must be a \\w.');
-
-    if (typeof variables[name] !== 'string')
-      variables[name] = String(variables[name]);
-  })
-
-  var regex = /(^|\s)\$([\w-]+)(\s|$)/g
-
   function replace(str) {
     return str.replace(regex, function (_, start, name, end) {
       return start + (variables[name] || name) + end
     })
-  }
-
-  function check(str) {
-    return str.match(regex)
   }
 
   return function visit(node) {
@@ -42,4 +23,8 @@ module.exports = function (variables) {
       })
     })
   }
+}
+
+function check(str) {
+  return str.match(regex)
 }
