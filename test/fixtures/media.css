@@ -1,0 +1,11 @@
+@media mediaQuery {
+  body {
+    color: $one;
+  }
+}
+
+@media $mediaQuery {
+  body {
+    color: $1;
+  }
+}
