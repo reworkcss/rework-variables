@@ -7,7 +7,7 @@ module.exports = function (variables) {
 
   // Validate variables
   Object.keys(variables).forEach(function (name) {
-    if (!name.match(/\w/))
+    if (!name.match(/^[\w-]+$/))
       throw new Error('Each variable name must be a \\w.');
 
     if (typeof variables[name] !== 'string')
