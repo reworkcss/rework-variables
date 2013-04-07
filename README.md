@@ -1,5 +1,7 @@
 ## Variables
 
+[![Build Status](https://travis-ci.org/jonathanong/rework-variables.png)](https://travis-ci.org/jonathanong/rework-variables)
+
 Variable mixin for [rework](https://github.com/visionmedia/rework).
 
 ### API
