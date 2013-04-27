@@ -1,6 +1,7 @@
 {
   "name": "rework-variables",
   "description": "Variable support",
+  "repo": "jonathanong/rework-variables",
   "version": "0.0.1",
   "peerDependencies": {
     "visionmedia/rework": "*"
