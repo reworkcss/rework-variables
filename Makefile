@@ -1,4 +1,3 @@
-
 test:
 	@node test
 

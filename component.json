@@ -2,12 +2,13 @@
   "name": "rework-variables",
   "description": "Variable support",
   "repo": "jonathanong/rework-variables",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "peerDependencies": {
     "visionmedia/rework": "*"
   },
   "main": "index.js",
   "scripts": [
     "index.js"
-  ]
+  ],
+  "license": "MIT"
 }
