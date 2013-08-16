@@ -1,4 +1,4 @@
-var regex = /(^|\s)\$([\w-]+)(\s|$)/g
+var regex = /(^|,|\s|\()\$([\w-]+)($|,|\s|\))/g
 
 module.exports = function (variables) {
   function replace(str) {
