@@ -1,4 +1,4 @@
-## Variables [![Build Status](https://travis-ci.org/jonathanong/rework-variables.png)](https://travis-ci.org/jonathanong/rework-variables)
+## Variables [![Build Status](https://travis-ci.org/reworkcss/rework-variables.png)](https://travis-ci.org/reworkcss/rework-variables)
 
 Variable mixin for [rework](https://github.com/visionmedia/rework).
 
