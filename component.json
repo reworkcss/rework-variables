@@ -2,7 +2,7 @@
   "name": "rework-variables",
   "description": "Variable support",
   "repo": "reworkcss/rework-variables",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "peerDependencies": {
     "visionmedia/rework": "*"
   },
