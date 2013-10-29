@@ -23,6 +23,7 @@ function test(file, msg) {
   assert.equal(out, read(file + '.out'), msg + ':\n' + out)
 }
 
+test('comment', 'Comments failed')
 test('variables', 'Variables failed')
 test('media', 'Media failed')
 test('context', 'Context failed')
