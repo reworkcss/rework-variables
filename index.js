@@ -28,7 +28,3 @@ module.exports = function (variables) {
     })
   }
 }
-
-function check(str) {
-  return str.match(regex)
-}
