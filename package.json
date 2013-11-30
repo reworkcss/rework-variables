@@ -1,7 +1,7 @@
 {
   "name": "rework-variables",
   "description": "Variable support",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "peerDependencies": {
     "rework": "*"
   },
