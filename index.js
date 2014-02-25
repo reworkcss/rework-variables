@@ -23,8 +23,10 @@ module.exports = function (variables) {
   }
 
   function replace(str) {
-    return str.replace(regex, function (_, start, name, end) {
-      return start + (variables[name] || name) + end
+    return str.replace(regex, function (original, start, name, end) {
+      return name in variables
+        ? start + variables[name] + end
+        : original
     })
   }
 }
